@@ -9,7 +9,7 @@ class About extends Component {
   };
 
   componentWillMount() {
-    this.props.setActivePage('Page Not Found | Bere B', 'not-found');
+    this.props.setActivePage('Page Not Found | Dashing', 'not-found');
   }
 
   render() {

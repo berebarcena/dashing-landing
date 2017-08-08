@@ -10,15 +10,17 @@ class Home extends Component {
   };
 
   componentWillMount() {
-    this.props.setActivePage('Dashing', 'home');
+    this.props.setActivePage('Home | Dashing', 'home');
   }
 
   render() {
     return (
       <div className="home">
         <div className="intro-text">
-          <h1>Living abroad can be hard</h1>
-          <h1>Getting a haircut shouldn’t be</h1>
+          <h1>
+            Living abroad can be hard <br />
+            Getting a haircut shouldn’t be
+          </h1>
           <p>
             Discover great beauty professionals in Copenhagen Area.
           </p>

@@ -1,0 +1,58 @@
+// Reset
+@import 'reset';
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+$sans-serif-font: 'Montserrat', sans-serif;
+
+//global styles
+
+body {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+// Layout
+@import '../containers/Layout/index';
+
+// Containers
+@import '../containers/Home/index';
+@import '../containers/About/index';
+@import '../containers/Projects/index';
+@import '../containers/Project/index';
+
+// Components
+
+
+
+

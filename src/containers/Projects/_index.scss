@@ -1,0 +1,15 @@
+.projects {
+  ul {
+    display: flex;
+    justify-content:space-between; 
+  }
+  li {
+    display: block;
+
+    img {
+    width:100%;
+    max-width: 300px;
+    }
+  }
+  
+}

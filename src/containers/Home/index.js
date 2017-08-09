@@ -41,7 +41,7 @@ class Home extends Component {
         </section>
         <section className="why">
             <div className="column yellow">
-              <h1>Why dashing?</h1>
+              <h1>Why <br />dashing?</h1>
             </div>
             <div className="column">
               <ul>

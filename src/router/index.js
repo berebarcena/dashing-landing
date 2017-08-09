@@ -12,14 +12,8 @@ import {
 
 export default class Router extends Component {
   render() {
-    // NOTE: routerProps need to be removed once the gh-pages site url is changed to
-    // http://dashing.dk
-    const routerProps = {};
-    if (process.env.NODE_ENV === 'production') {
-      routerProps.basename = '/dashing-landing';
-    }
     return (
-      <BrowserRouter {...routerProps}>
+      <BrowserRouter>
         <Layout>
           <Switch>
             <Route exact path="/" component={Home}/>

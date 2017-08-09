@@ -48,5 +48,9 @@
     "lint": "eslint src",
     "test": "npm run lint && jest",
     "gh-pages": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "isomorphic-fetch": "^2.2.1"
   }
 }

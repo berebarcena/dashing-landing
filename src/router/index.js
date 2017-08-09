@@ -12,8 +12,14 @@ import {
 
 export default class Router extends Component {
   render() {
+    // Remove when updating domain
+    const routerProps = {};
+    if (process.env.NODE_ENV === 'production') {
+      routerProps.basename = '/landing';
+    }
+
     return (
-      <BrowserRouter>
+      <BrowserRouter {...routerProps}>
         <Layout>
           <Switch>
             <Route exact path="/" component={Home}/>

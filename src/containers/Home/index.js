@@ -18,8 +18,6 @@ class Home extends Component {
     return (
       <div className="home">
         <section className="intro-text">
-          <img src="./static/img/hero-background.jpg"/>
-
           <div className="wrapper">
 
             <h1>

@@ -37,9 +37,7 @@ class Layout extends Component {
           </div>
         </div>
         <div id="content" className="layout__content">
-          <div className="page-wrapper">
-            {this.props.children}
-          </div>
+          {this.props.children}
         </div>
         <div id="footer" className="layout__footer">
           <div className="page-wrapper">

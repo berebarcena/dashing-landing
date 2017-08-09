@@ -1,5 +1,5 @@
 const initialState = {
-  title: 'Home | Bere B',
+  title: 'Dashing',
   page: 'home'
 };
 

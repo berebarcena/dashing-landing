@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import Modal from '../../components/Modal';
+import BeautyPartnerForm from '../../components/BeautyPartnerForm';
+
 
 import * as svgs from '../../constants/svgs.js';
 
@@ -10,12 +12,20 @@ class Layout extends Component {
     navigation: PropTypes.object,
   };
 
+  state = {
+    isModalOpen: false,
+  };
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.navigation.title !== this.props.navigation.title) {
       document.title = nextProps.navigation.title;
     }
   }
-
+  toggleModal = () => {
+    this.setState({
+      isModalOpen: !this.state.isModalOpen
+    });
+  }
   render() {
     return (
       <div id="app-wrapper" className={`layout ${this.props.navigation.page}`}>
@@ -27,9 +37,9 @@ class Layout extends Component {
             <nav id="menu">
               <ul>
                 <li>
-                  <Link to="/">
+                  <a onClick={this.toggleModal} href="javascript:void(0)">
                     Join us as a beauty partner
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -55,6 +65,10 @@ class Layout extends Component {
             </ul>
           </div>
         </div>
+        <Modal isOpen={this.state.isModalOpen}>
+          <buttom onClick={this.toggleModal}>Close</buttom>
+         <BeautyPartnerForm />
+        </Modal>
       </div>
     );
   }

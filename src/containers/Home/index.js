@@ -28,8 +28,8 @@ class Home extends Component {
             <p>
               Discover great beauty professionals within the Copenhagen Area.
             </p>
-            <h2>Get Notified.</h2>
-            <EmailForm className="hero-form" />
+            <h3>Get Notified!</h3>
+            <EmailForm className="hero-form form" />
           </div>
 
         </section>
@@ -77,7 +77,7 @@ class Home extends Component {
             <p>Leave us your email and we'll let you know once we are ready!</p>
             <p>Don't worry, we hate spam too! (We would never sell your email u_u)</p>
             <h3>Get notified</h3>
-            <EmailForm className="footer-form" />
+            <EmailForm className="footer-form form" />
           </div>
         </section>
       </div>

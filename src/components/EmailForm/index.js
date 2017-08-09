@@ -89,8 +89,8 @@ export default class EmailForm extends Component {
   // Renders the thank you message after the form is submitted
   _renderThankyou = () => {
     return (
-      <div>
-        Thank you
+      <div className="thanks">
+        Thank you! <br/> We'll keep you posted :)
       </div>
     );
   }
@@ -113,6 +113,7 @@ export default class EmailForm extends Component {
             })}
             onChange={this.setField}
             value={emailValue}
+            placeholder='Your Email'
           />
           <button onClick={this.submitForm}>Submit</button>
           {

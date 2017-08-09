@@ -16,7 +16,54 @@
       position: relative;
       z-index: 100;
 
+      .thanks {
+        margin: 2em 0;
+      }
+      svg {
+        width: 100px;
+      }
     }
+
+    .form {
+        margin: 1em 0;
+        span {
+          display:block;
+          color: #E62F2D;
+          margin: 1em 0;
+        }
+
+        input {
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          width: 200px;
+          height: 35px;
+          padding: 5px 15px;
+          border: 1px solid #32373f;
+
+          &.email-field--error {
+            border-color:#E62F2D;
+          }
+
+        }
+        button {
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          padding: 5px 15px;
+          height: 50px;
+          width: 130px;
+          margin: 0 1em;
+          background-color: #FFC54B;
+          border: 1px solid #FFC54B;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #BF8B1C;
+            color: #fff;
+          }
+
+        }
+      }
 
     &.intro-text {
       padding: 10em 0;
@@ -79,6 +126,14 @@
             position:relative;
             z-index: 100;
           }
+        }
+      }
+    }
+
+    &.notify {
+      .wrapper {
+        h3 {
+          margin-top: 2em;
         }
       }
     }

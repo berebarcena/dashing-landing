@@ -17,7 +17,6 @@ class Layout extends Component {
   }
 
   render() {
-    const activePage = this.props.navigation.page;
     return (
       <div id="app-wrapper" className={`layout ${this.props.navigation.page}`}>
         <div id="header" className="layout__header">
@@ -28,7 +27,7 @@ class Layout extends Component {
             <nav id="menu">
               <ul>
                 <li>
-                  <Link to="/" className={activePage === 'home' ? 'active' : ''}>
+                  <Link to="/">
                     Join us as a beauty partner
                   </Link>
                 </li>

@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import setActivePage from '../../actions/navigation';
+import EmailForm from '../../components/EmailForm';
 
+import setActivePage from '../../actions/navigation';
 
 class Home extends Component {
   static propTypes = {
@@ -27,7 +28,8 @@ class Home extends Component {
             <p>
               Discover great beauty professionals within the Copenhagen Area.
             </p>
-            <div>Get Notified.</div>
+            <h2>Get Notified.</h2>
+            <EmailForm className="hero-form" />
           </div>
 
         </section>
@@ -74,7 +76,8 @@ class Home extends Component {
             <p>We are just 2 girls trying to make this happen!</p>
             <p>Leave us your email and we'll let you know once we are ready!</p>
             <p>Don't worry, we hate spam too! (We would never sell your email u_u)</p>
-            <div>Get notified</div>
+            <h3>Get notified</h3>
+            <EmailForm className="footer-form" />
           </div>
         </section>
       </div>

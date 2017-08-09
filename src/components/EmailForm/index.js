@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 require('isomorphic-fetch');
 
 export default class EmailForm extends Component {
+  static propTypes = {
+    className: PropTypes.string,
+  }
+
   // Initial state
   state = {
     isSubmiting: false,
@@ -35,7 +40,7 @@ export default class EmailForm extends Component {
         isSubmitting: true,
       }, () => {
         // Start submitting the form
-        fetch(formURL, {
+        fetch(this.formURL, {
           method: 'POST',
           headers: {
             'Accept': 'application/json, application/xml, text/plain, text/html, *.*',
@@ -97,7 +102,7 @@ export default class EmailForm extends Component {
       ?
         <div className="loader">Submitting....</div>
       :
-        <form onSubmit={this.submitForm}>
+        <form onSubmit={this.submitForm} className={this.props.className}>
           <input
             className={classNames('email-field', {
               'email-field--error': isInvalidEmail,

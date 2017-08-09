@@ -43,12 +43,12 @@ class Layout extends Component {
             <p>Follow us!</p>
             <ul className="social-icons">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/dashingcph" target="_blank" rel="noopener noreferrer">
                   {svgs.facebookLogo}
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/dashingcph" target="_blank" rel="noopener noreferrer">
                  {svgs.instagramLogo}
                 </a>
               </li>

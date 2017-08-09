@@ -1,12 +1,13 @@
 {
-  "name": "MyProject",
-  "version": "0.0.0",
-  "description": "My single page app",
+  "name": "dashing-landing",
+  "version": "1.0.0",
+  "description": "Initial landing page for dashing.dk",
   "repository": {
     "type": "git",
     "url": "https://github.com/berebarcena/berebarcena.com"
   },
   "license": "MIT",
+  "private": true,
   "main": "src/app.js",
   "devDependencies": {
     "babel-core": "^6.25.0",

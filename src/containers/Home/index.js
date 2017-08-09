@@ -25,7 +25,7 @@ class Home extends Component {
               Getting a haircut <span>shouldn’t be</span>
             </h1>
             <p>
-              Discover great beauty professionals in Copenhagen Area.
+              Discover great beauty professionals within the Copenhagen Area.
             </p>
             <div>Get Notified.</div>
           </div>
@@ -34,8 +34,16 @@ class Home extends Component {
         <section className="about">
           <div className="wrapper">
             <p>
-             After living in over 5 new countries, finding a new hairdresser became a regular issue for us.<br/>
-             The more we talked about this problem with others the more we realised that there are many other people also struggling to find their <span>perfect</span> hairdresser in a new country. A hairdresser that is happy to speak with you in your preferred language and one that understands and is comfortable cutting curly, thick, thin or other (!) hair. <br/> A hairdresser who gets <span>you.</span>
+             After living in over 5 countries, finding a new hairdresser became a regular issue for us.
+            </p>
+            <p>
+              The more we talked about this with others the more we realised that there was a common struggle amongst foreigners: finding the <span>perfect</span> hairdresser in a new country.
+            </p>
+            <p>
+             A hairdresser that can speak your language and understands different kinds of hair.
+            </p>
+            <p>
+              A hairdresser who gets <span>YOU.</span>
             </p>
           </div>
         </section>
@@ -63,9 +71,10 @@ class Home extends Component {
         <section className="notify">
           <div className="wrapper">
             <h2>We are still in our development phase</h2>
-            <p>We are just 2 girls trying to make this done!<br/>Leave us your email and we'll let you know once we are ready!<br/>Don't worry, we hate spam too! (We would never do bad things to your mail u_u)</p>
+            <p>We are just 2 girls trying to make this happen!</p>
+            <p>Leave us your email and we'll let you know once we are ready!</p>
+            <p>Don't worry, we hate spam too! (We would never sell your email u_u)</p>
             <div>Get notified</div>
-
           </div>
         </section>
       </div>

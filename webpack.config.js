@@ -40,6 +40,7 @@ var config = {
   },
   output: {
     path: __dirname + '/dist',
+    publicPath: isProduction ? '/landing' : '/',
     filename: 'bundle.js'
   },
   module: {
@@ -68,7 +69,10 @@ var config = {
         test: /\.(sass|scss)$/,
         use: [
           'style-loader',
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: { url: false }
+          },
           'sass-loader'
         ]
       },

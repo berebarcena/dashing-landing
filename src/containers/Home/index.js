@@ -50,7 +50,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="why">
-            <div className="column yellow">
+            <div className="column yellow overlay">
               <h1>Why <br />dashing?</h1>
             </div>
             <div className="column">

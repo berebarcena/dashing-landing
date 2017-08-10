@@ -31,18 +31,16 @@ class Layout extends Component {
       <div id="app-wrapper" className={`layout ${this.props.navigation.page}`}>
         <div id="header" className="layout__header">
           <div className="page-wrapper">
-            <h1 className="logo">
+            <div className="top-nav">
+              <h1 className="logo">
                 <img src='./static/img/logo.png'/>
-            </h1>
-            <nav id="menu">
-              <ul>
-                <li>
-                  <a onClick={this.toggleModal} href="javascript:void(0)">
+              </h1>
+              <nav id="menu">
+                <a onClick={this.toggleModal} href="javascript:void(0)">
                     Join us as a beauty partner
-                  </a>
-                </li>
-              </ul>
-            </nav>
+                </a>
+              </nav>
+            </div>
           </div>
         </div>
         <div id="content" className="layout__content">

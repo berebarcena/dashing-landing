@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Modal from '../../components/Modal';
@@ -28,7 +29,16 @@ class Layout extends Component {
   }
   render() {
     return (
-      <div id="app-wrapper" className={`layout ${this.props.navigation.page}`}>
+      <div
+        id="app-wrapper"
+        className={classNames(
+          'layout',
+          this.props.navigation.page,
+          {
+            'modal-open': this.state.isModalOpen,
+          }
+        )}
+      >
         <div id="header" className="layout__header">
           <div className="page-wrapper">
             <div className="top-nav">

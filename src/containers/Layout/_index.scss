@@ -3,6 +3,12 @@
   $footer-height: 100px;
   font-family: $sans-serif-font;
 
+  &.modal-open {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
 
   .page-wrapper {
     max-width: 1024px;
@@ -94,11 +100,12 @@
 
   }
   .modal {
-     position: absolute;
+     position: fixed;
+     overflow: scroll;
      left: 0px;
      top: 0px;
      width: 100%;
-     height: 150vh;
+     height: 100vh;
      text-align: center;
      z-index: 999;
      background-color: rgba(32,30,15, .9);
@@ -176,7 +183,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 480px) {
   .layout {
     p, .info p, .info a {
       font-size: 19px;
@@ -194,14 +201,15 @@
 
         .logo {
           img {
-            min-width: 350px;
+            width: 85%;
+            margin: 0 auto;
           }
         }
 
         nav {
 
           a {
-            font-size: 24px;
+            font-size: 22px;
           }
         }
       }
@@ -215,12 +223,12 @@
             width: 92%;
           }
           input, textarea {
-            min-width: 90%;
+            min-width: 85%;
             height: 45px;
           }
 
           .submitButton {
-            width: 350px;
+            width: 85%;
         }
         }
 

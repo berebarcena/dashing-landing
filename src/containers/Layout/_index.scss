@@ -29,6 +29,7 @@
         img {
           width: 100%;
           max-width:180px;
+
         }
       }
       nav {
@@ -58,6 +59,7 @@
 
     .info {
       text-align: center;
+      margin: 0 1em;
       a {
         color: #FFC54B;
       }
@@ -83,8 +85,8 @@
       display:block;
       svg {
         fill: #32373f;
-        width: 25px;
-        height: 25px;
+        min-width: 25px;
+        min-height: 25px;
 
       }
 
@@ -174,21 +176,50 @@
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (min-width:600px) {
   .layout {
+    p, .info p, .info a {
+      font-size: 19px;
+    }
+
     &__header {
-      line-height: 1.2;
+      margin: 2em 0;
+      line-height: 1;
       .top-nav {
-        justify-content: center;
+        display: block;
+        text-align: center;
+        padding: 1em 0;
+
+        .logo {
+          img {
+            min-width: 200px;
+          }
+        }
+
         nav {
-        float:none;
+
           a {
-            line-height: 1;
-            margin: 0 auto;
-            height:0;
+            font-size: 19px;
           }
         }
       }
     }
+    .modal {
+      > div {
+        min-width: 85%;
+
+        form {
+          * {
+            width: 85%;
+          }
+
+          .submitButton {
+          width: 220px;
+        }
+        }
+
+      }
+    }
   }
+
 }

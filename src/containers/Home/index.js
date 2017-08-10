@@ -26,7 +26,7 @@ class Home extends Component {
               Getting a haircut <span>shouldn’t be</span>
             </h1>
             <p>
-              Discover great beauty professionals within the Copenhagen Area.
+              Discover great beauty experts within the Copenhagen Area.
             </p>
             <h3>Get Notified!</h3>
             <EmailForm className="hero-form form" />
@@ -39,7 +39,7 @@ class Home extends Component {
              After living in over 5 countries, finding a new hairdresser became a regular issue for us.
             </p>
             <p>
-              The more we talked about this with others the more we realised that there was a common struggle amongst foreigners: finding the <span>perfect</span> hairdresser in a new country.
+              The more we talked about this with other international people, the more we realised that there was a common struggle among foreigners: finding the <span>perfect</span> hairdresser in a new country.
             </p>
             <p>
              A hairdresser that can speak your language and understands different kinds of hair.
@@ -61,7 +61,7 @@ class Home extends Component {
                 </li>
                 <li>
                   <h3>Affordable for students</h3>
-                  <p> Choose stylists according to any budget</p>
+                  <p> Choose stylists according to your budget</p>
                 </li>
                 <li>
                   <h3>Exposure for beauty freelancers</h3>

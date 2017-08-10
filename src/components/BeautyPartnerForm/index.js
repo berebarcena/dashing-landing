@@ -121,7 +121,7 @@ export default class BeautyPartnerForm extends Component {
         </svg>
       :
       <form onSubmit={this.submitForm} className={this.props.className}>
-          <p>We would love to have you in our platform! <br/>
+          <p>Are you a beauty student, a professional or simply passionate? We would love to have you!<br/>
           Please fill in the following form so we can contact you as soon as possible</p>
 
           <label>Name:</label>
@@ -148,7 +148,9 @@ export default class BeautyPartnerForm extends Component {
             value={this.state.facebookValue}
             onChange={(e) => this.setField(e, 'facebookValue')}
           />
-          <label>Are you a beauty student? Do you own a salon? <br/>Tell us about you! </label>
+          <label>Are you a beauty student? Do you own a salon? All types of beauty-related talents are welcome!<br/>
+            Tell us about yours!
+          </label>
           <textarea
             value={this.state.comments}
             onChange={(e) => this.setField(e, 'comments')}

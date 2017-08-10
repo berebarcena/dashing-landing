@@ -185,6 +185,10 @@
         }
       }
       .form {
+        input {
+          min-width: 300px;
+          height: 50px;
+        }
 
         .submitButton {
           margin: 1em;

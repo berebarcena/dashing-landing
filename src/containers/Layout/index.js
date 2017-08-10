@@ -50,6 +50,11 @@ class Layout extends Component {
         </div>
         <div id="footer" className="layout__footer">
           <div className="page-wrapper">
+            <div className="info">
+              <p>Porcelænshaven 26, 2000 Frederiksberg, DK</p>
+              <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;">&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;</a>
+            </div>
+
             <p>Follow us!</p>
             <ul className="social-icons">
               <li>

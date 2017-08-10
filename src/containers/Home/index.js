@@ -22,7 +22,7 @@ class Home extends Component {
           <div className="wrapper">
 
             <h1>
-              Living abroad can be hard <br />
+              Living abroad can be hard, <br />
               Getting a haircut <span>shouldn’t be</span>
             </h1>
             <p>

@@ -47,20 +47,10 @@
         line-height: $header-height;
         padding: 0 10px;
         position: relative;
+        text-decoration: underline;
 
-        &.active {
+        &:hover {
           color:#FFC54B;
-        }
-
-        &:hover:after {
-          content:'';
-          width: calc(100% - 20px);
-          height: 2px;
-          background: #FFC54B;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          bottom: 30px;
         }
       }
 
@@ -78,12 +68,19 @@
     position: relative;
     height: $footer-height;
 
+    .info {
+      text-align: center;
+      a {
+        color: #FFC54B;
+      }
+    }
+
     p {
       text-align: center;
     }
     .social-icons {
       max-width: 6em;
-      margin: 2em auto;
+      margin: 1em auto;
       display: flex;
       justify-content:space-between;
 
@@ -115,6 +112,10 @@
      text-align: center;
      z-index: 999;
      background-color: rgba(32,30,15, .9);
+
+     svg {
+        width: 100px;
+      }
 
     > div {
       width:60%;

@@ -176,7 +176,7 @@
   }
 }
 
-@media screen and (min-width:600px) {
+@media only screen and (max-width: 600px) {
   .layout {
     p, .info p, .info a {
       font-size: 19px;

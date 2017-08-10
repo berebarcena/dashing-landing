@@ -66,8 +66,10 @@ class Layout extends Component {
           </div>
         </div>
         <Modal isOpen={this.state.isModalOpen}>
-          <buttom onClick={this.toggleModal}>Close</buttom>
-         <BeautyPartnerForm />
+          <div>
+            <buttom onClick={this.toggleModal} className="close">Close</buttom>
+            <BeautyPartnerForm />
+          </div>
         </Modal>
       </div>
     );

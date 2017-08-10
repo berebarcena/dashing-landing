@@ -115,7 +115,7 @@ export default class EmailForm extends Component {
             value={emailValue}
             placeholder='Your Email'
           />
-          <button onClick={this.submitForm}>Submit</button>
+          <button onClick={this.submitForm} className="submitButton">Submit</button>
           {
             isInvalidEmail
             ?

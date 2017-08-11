@@ -23,7 +23,7 @@ class Home extends Component {
 
             <h1>
               Living abroad can be hard, <br />
-              Getting a haircut <span>shouldn’t be</span>
+              getting a haircut <span>shouldn’t be</span>
             </h1>
             <p>
              Discover beauty students and experts with their own prices, ratings &<br/> portfolio <span>all in 1 platform.</span>

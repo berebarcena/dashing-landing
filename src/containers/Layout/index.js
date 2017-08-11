@@ -71,7 +71,7 @@ class Layout extends Component {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/dashingdotdk" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/dashingclub" target="_blank" rel="noopener noreferrer">
                  {svgs.instagramLogo}
                 </a>
               </li>

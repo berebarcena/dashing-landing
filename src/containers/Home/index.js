@@ -26,9 +26,10 @@ class Home extends Component {
               Getting a haircut <span>shouldn’t be</span>
             </h1>
             <p>
-              Discover great beauty experts within the Copenhagen Area.
+             Discover beauty students and experts with their own prices, ratings &<br/> portfolio <span>all in 1 platform.</span>
             </p>
-            <h3>Get Notified!</h3>
+            <h3>Get Notified <br/> & invited to our launching party!</h3>
+
             <EmailForm className="hero-form form" />
           </div>
 
@@ -65,7 +66,7 @@ class Home extends Component {
                 </li>
                 <li>
                   <h3>Exposure for beauty freelancers</h3>
-                  <p>Give student stylists a chance to build their portfolio and improve their skills</p>
+                  <p>Give experts, student stylists and anyone who is passionate about hair & beauty a chance to build their portfolio and improve their skills </p>
                 </li>
               </ul>
             </div>
@@ -75,8 +76,8 @@ class Home extends Component {
             <h2>We are still in our development phase</h2>
             <p>We are just 2 girls trying to make this happen!</p>
             <p>Leave us your email and we'll let you know once we are ready!</p>
-            <p>Don't worry, we hate spam too! (We would never sell your email u_u)</p>
-            <h3>Get notified</h3>
+            <p>Don't worry, we hate spam too! (Anyway, we are too busy building this platform)</p>
+            <h3>Get Notified <br/> & invited to our launching party!</h3>
             <EmailForm className="footer-form form" />
           </div>
         </section>

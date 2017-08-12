@@ -43,7 +43,7 @@ class Home extends Component {
               The more we talked about this with other international people, the more we realised that there was a common struggle among foreigners: finding the <span>perfect</span> hairdresser in a new country.
             </p>
             <p>
-             A hairdresser that can speak your language and understands different kinds of hair.
+             A hairdresser that can speak your language and understands different types of hair.
             </p>
             <p>
               A hairdresser who gets <span>YOU.</span>

@@ -3,6 +3,30 @@
   $footer-height: 100px;
   font-family: $sans-serif-font;
 
+  .social-icons {
+    max-width: 6em;
+    margin: 1em auto;
+    display: flex;
+    justify-content:space-between;
+
+    li a {
+      display:block;
+      &:hover {
+        svg {
+          fill: #FFC54B;
+        }
+      }
+      svg {
+        fill: #32373f;
+        min-width: 25px;
+        min-height: 25px;
+
+      }
+
+    }
+
+  }
+
   &.modal-open {
     width: 100vw;
     height: 100vh;
@@ -74,29 +98,8 @@
     p {
       text-align: center;
     }
-    .social-icons {
-      max-width: 6em;
-      margin: 1em auto;
-      display: flex;
-      justify-content:space-between;
 
-    }
-    li a {
-      &:hover {
-        svg {
-          fill: #FFC54B;
-        }
-      }
 
-      display:block;
-      svg {
-        fill: #32373f;
-        min-width: 25px;
-        min-height: 25px;
-
-      }
-
-    }
 
   }
   .modal {
@@ -220,7 +223,7 @@
 
         form {
           * {
-            width: 92%;
+            width: 90%;
           }
           input, textarea {
             min-width: 85%;

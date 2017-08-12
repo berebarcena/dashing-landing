@@ -35,7 +35,6 @@
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: 300;
-          min-width: 250px;
           height: 35px;
           padding: 5px 15px;
           border: 1px solid #32373f;
@@ -119,7 +118,7 @@
         }
 
         flex: 1;
-        padding: 6em 8em;
+        padding: 6em;
         background-color:#f8f8fa;
 
         &.yellow {
@@ -154,6 +153,7 @@
     }
 
     &.notify {
+      padding-bottom: 1.5em;
       .wrapper {
         h3 {
           margin-top: 2em;
@@ -171,37 +171,42 @@
 
       &.intro-text {
         padding: 0;
+
         .wrapper {
-          padding: 8em 0;
+          padding: 4em 2em;
+          padding-bottom: 1em;
         }
 
         h1 {
           font-size: 34px;
           line-height: 1;
         }
-        p {
-          padding: 1em 2em;
-        }
+
       }
 
       &.why {
         display:block;
         .column {
+
           padding: 4em;
           h1 {
             font-size: 34px;
+          }
+          ul {
+            list-style-type: none;
           }
         }
       }
 
       &.notify {
+        padding-bottom: 0;
         h2 {
-          font-size: 34px;
+          font-size: 28px;
         }
       }
       .form {
         input {
-          width: 85%;
+          width: 80%;
           height: 50px;
         }
 

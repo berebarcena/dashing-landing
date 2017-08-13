@@ -61,8 +61,8 @@ class Home extends Component {
                   <p>Discover trusted and rated stylists in an unknown city</p>
                 </li>
                 <li>
-                  <h3>Affordable for students</h3>
-                  <p> Choose stylists according to your budget</p>
+                  <h3>Get to know your stylist upfront</h3>
+                  <p> Choose according to the exact prices, reviews and past work</p>
                 </li>
                 <li>
                   <h3>Exposure for beauty freelancers</h3>

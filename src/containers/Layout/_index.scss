@@ -67,7 +67,9 @@
         a {
           color: #000;
           text-decoration: underline;
-
+          &.active {
+            color:#FFC54B;
+          }
           &:hover {
             color:#FFC54B;
           }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Modal from '../../components/Modal';
 import BeautyPartnerForm from '../../components/BeautyPartnerForm';
-
+import { Link } from "react-router-dom";
 
 import * as svgs from '../../constants/svgs.js';
 
@@ -28,27 +28,33 @@ class Layout extends Component {
     });
   }
   render() {
+    const activePage = this.props.navigation.page;
     return (
+
       <div
         id="app-wrapper"
-        className={classNames(
-          'layout',
-          this.props.navigation.page,
-          {
-            'modal-open': this.state.isModalOpen,
-          }
-        )}
+        className={`layout ${this.props.navigation.page}`}
+        // className={classNames(
+        //   'layout',
+        //   this.props.navigation.page,
+        //   {
+        //     'modal-open': this.state.isModalOpen,
+        //   }
+        // )}
       >
         <div id="header" className="layout__header">
           <div className="page-wrapper">
             <div className="top-nav">
-              <h1 className="logo">
-                <img src='./static/img/logo.png'/>
-              </h1>
+              <Link to="/">
+                <h1 className="logo">
+                  <img src='./static/img/logo.png'/>
+                </h1>
+              </Link>
               <nav id="menu">
-                <a onClick={this.toggleModal} href="javascript:void(0)">
-                    Join us as a beauty partner
-                </a>
+                <Link to="/partners" className={activePage === 'partners' ? 'active' : ''}>Join us as a beauty partner</Link>
+                {/*<a onClick={this.toggleModal} href="javascript:void(0)">
+                  Join us as a beauty partner
+      </a>*/}
               </nav>
             </div>
           </div>

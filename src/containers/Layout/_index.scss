@@ -194,6 +194,13 @@
       }
     }
   }
+  &.partners {
+    .social {
+      .social-icons {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -248,11 +255,19 @@
       }
     }
     &__footer {
-      .social-icons {
-        max-width: 10em;
-        li a svg {
-          width: 40px;
-          height: 40px;
+
+      .page-wrapper {
+        justify-content: center;
+        .contact {
+        text-align: center;
+        }
+
+        .social-icons {
+          max-width: 8em;
+          li a svg {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
     }

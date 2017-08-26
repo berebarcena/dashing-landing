@@ -52,10 +52,10 @@ class Partners extends Component {
         <section className="about">
         <div className="wrapper">
           <p>
-          It’s time for beauty and wellness professionals to have their Dashing platform, where thousands of new clients can easily discover you.
+          It’s time for beauty and wellness professionals to have their Dashing platform, where thousands of future clients can easily discover you.
          </p>
           <p>
-          We love small businesses and want you to have a platform similar to ‘Airbnb’ to give you more freedom to seamlessly promote your profile. You can build your reputation, skills and clients-list while doing what you love.
+          We love small businesses and want you to have a platform similar to ‘Airbnb’ to give you more freedom to promote your profile. You can build your reputation, skills and clients-list while doing what you love.
           </p>
         </div>
       </section>
@@ -66,19 +66,19 @@ class Partners extends Component {
             <ul>
               <li>
                 <div>{svgs.costumers}</div>
-                <h3>Get More Customers</h3>
-                <p>We connect you to clients who are too busy working and are not available at regular hours, so you can fill those empty slots</p>
+                <h3>Get More Clients</h3>
+                <p>We connect you to many new clients including those who are too busy working and are not available at regular hours, so you can fill those empty time slots in your calendar</p>
               </li>
               <li>
                 <div>{svgs.pictures}</div>
                 <h3>Professional Pictures</h3>
-                <p>Taking beautiful photographs of you, your work and salon (if applicable)
+                <p>We take beautiful photographs of you, your work and salon (if applicable) for your profile
                 </p>
               </li>
               <li>
                 <div>{svgs.profile}</div>
                 <h3>A face to your business</h3>
-                <p>People love people and we want to know more about YOU, so we help you to develop your self-description
+                <p>People love people and we want to know more about YOU so clients can discover you as both a wonderful person and a professional
                 </p>
               </li>
               <li>
@@ -120,7 +120,34 @@ class Partners extends Component {
         </section>
         <section className="profile">
           <div className="profile-mock">
-            <img src='./static/img/profile-mock.jpg'/>
+            <img src='./static/img/profile-mock.jpg' className="desktop" />
+            <img src="./static/img/profile-mobile.jpg" className="mobile" />
+            <ul className="mobile features">
+              <li>
+                <h3>1. STUNNING PICTURES</h3>
+                <p>If you do not have as good photos of your work as you would like to, we have our team member who would arrange a photo-shoot for you for free. </p>
+              </li>
+              <li>
+                <h3>2. CONTACT INFORMATION</h3>
+                <p>Make sure to include a phone number and e-mail to allow clients to get in touch and request an appointment.</p>
+              </li>
+
+              <li>
+                <h3>3. DESCRIPTION</h3>
+                <p>We know that you are unique and that’s what we love about you. So have the freedom to express yourself and let your clients know what makes you the artist and professional you were born to be.</p>
+              </li>
+              <li>
+                <h3>4. LANGUAGES</h3>
+                <p>Surprise your clients with different languages that you speak, so they can choose the language that they are the most comfortable in when contacting you. </p>
+              </li>
+              <li>
+                <h3>5. SERVICES AND PRICES</h3>
+                <p>Indicate your price menu so the client knows exactly how much he or she will be charged for the fabulous service that they get from you. </p>
+              </li>
+            </ul>
+            <div className="cta">
+              <a onClick={this.toggleModal} href="javascript:void(0)">Create your profile!</a>
+            </div>
           </div>
         </section>
         <section className="we-care">
@@ -128,7 +155,7 @@ class Partners extends Component {
             <h3>We care a lot about our beauty partners’ individual growth and want to be as supportive as possible.</h3>
             <p>
               Get in touch with us by e-mail <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;">&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;</a> or by phone <span>+45 52 60 82 01</span></p>
-            <p>We also like coffee and we will be more than happy to meet in person when available.</p>
+            <p>We are in development phase now and hope to see you at our launching party!</p>
 
           </div>
         </section>

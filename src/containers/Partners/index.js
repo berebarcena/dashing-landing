@@ -6,6 +6,7 @@ import BeautyPartnerForm from '../../components/BeautyPartnerForm';
 import classNames from 'classnames';
 
 import setActivePage from '../../actions/navigation';
+import * as svgs from '../../constants/svgs.js';
 
 class Partners extends Component {
   static propTypes = {
@@ -38,79 +39,97 @@ class Partners extends Component {
         <section className="intro-text">
           <div className="wrapper">
             <h1>
-              Holis a todos bebes :)
+              Being a hairdresser can be difficult, <br/>getting more clients shouldn’t be.
             </h1>
             <p>
-             Discover beauty students and experts with their own prices, ratings &<br/> portfolio <span>all in 1 platform.</span>
+              Get the attention that your skills deserve with just 1 platform
             </p>
-            <h3>Become a beauty partner</h3>
-            <a onClick={this.toggleModal} href="javascript:void(0)">Join us as a beauty partner </a>
+            <a onClick={this.toggleModal} href="javascript:void(0)">Join as a beauty partner </a>
           </div>
         </section>
+        <section className="about">
+        <div className="wrapper">
+          <p>
+          It’s time for beauty and wellness professionals to have their Dashing platform, where thousands of new clients can easily discover you.
+         </p>
+          <p>
+          We love small businesses and want you to have a platform similar to ‘Airbnb’ to give you more freedom to seamlessly promote your profile. You can build your reputation, skills and clients-list while doing what you love.
+          </p>
+        </div>
+      </section>
         <section className="benefits">
           <div className="wrapper">
-            <h2>All things we take care of for you</h2>
+            <h2>Focus on what you do best in your job</h2>
+            <h3>We take care of the rest</h3>
             <ul>
               <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
+                <div>{svgs.costumers}</div>
+                <h3>Get More Customers</h3>
+                <p>We connect you to clients who are too busy working and are not available at regular hours, so you can fill those empty slots</p>
               </li>
               <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
+                <div>{svgs.pictures}</div>
+                <h3>Professional Pictures</h3>
+                <p>Taking beautiful photographs of you, your work and salon (if applicable)
+                </p>
               </li>
               <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
+                <div>{svgs.profile}</div>
+                <h3>A face to your business</h3>
+                <p>People love people and we want to know more about YOU, so we help you to develop your self-description
+                </p>
               </li>
               <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
-              </li>
-              <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
-              </li>
-              <li>
-                <h3>Benefit1</h3>
-                <p>This is the explanation about why</p>
+                <div>{svgs.pr}</div>
+                <h3>Your own PR</h3>
+                <p>We will promote your services on social media, exclusive events, e-mails and collaborations with partner companies
+                </p>
               </li>
 
             </ul>
+            <div className="cta">
+              <p>Are you a professional or a beauty student?</p>
+              <a onClick={this.toggleModal} href="javascript:void(0)">Become a partner</a>
+            </div>
+
 
           </div>
         </section>
         <section className="why">
             <div className="column yellow overlay">
-              <h1>Why <br />dashing?</h1>
+              <h2>How to join our community </h2>
             </div>
             <div className="column">
-              <ul>
+              <ol>
                 <li>
-                  <h3>Best solution for foreigners</h3>
-                  <p>Discover trusted and rated stylists in an unknown city</p>
+                  <p>Submit “Become a partner” form</p>
                 </li>
                 <li>
-                  <h3>Get to know your stylist upfront</h3>
-                  <p> Choose according to the exact prices, reviews and past work</p>
+                  <p> Our team will contact you within 3 days to get you started</p>
                 </li>
                 <li>
-                  <h3>Exposure for beauty freelancers</h3>
-                  <p>Give experts, student stylists and anyone who is passionate about hair & beauty a chance to build their portfolio and improve their skills </p>
+                  <p>Free photography session will be organized (if desired)</p>
                 </li>
-              </ul>
+                <li>
+                  <p>Your individual profile will be created</p>
+                </li>
+              </ol>
             </div>
+        </section>
+        <section className="profile">
+          <div className="profile-mock">
+            <img src='./static/img/profile-mock.jpg'/>
+          </div>
         </section>
         <section className="notify">
           <div className="wrapper">
             <h2>We are still in our development phase</h2>
             <p>We are just 2 girls trying to make this happen!</p>
-            <p>Leave us your email and we'll let you know once we are ready!</p>
-            <p>Don't worry, we hate spam too! (Anyway, we are too busy building this platform)</p>
-            <h3>Get Notified <br/> & invited to our launching party!</h3>
+
 
           </div>
         </section>
+
         <Modal isOpen={this.state.isModalOpen}>
         <div>
           <buttom onClick={this.toggleModal} className="close">Close</buttom>

@@ -44,7 +44,9 @@ class Partners extends Component {
             <p>
               Get the attention that your skills deserve with just 1 platform
             </p>
-            <a onClick={this.toggleModal} href="javascript:void(0)">Join as a beauty partner </a>
+            <div className="cta">
+              <a onClick={this.toggleModal} href="javascript:void(0)">Join as a beauty partner </a>
+            </div>
           </div>
         </section>
         <section className="about">
@@ -121,11 +123,12 @@ class Partners extends Component {
             <img src='./static/img/profile-mock.jpg'/>
           </div>
         </section>
-        <section className="notify">
+        <section className="we-care">
           <div className="wrapper">
-            <h2>We are still in our development phase</h2>
-            <p>We are just 2 girls trying to make this happen!</p>
-
+            <h3>We care a lot about our beauty partners’ individual growth and want to be as supportive as possible.</h3>
+            <p>
+              Get in touch with us by e-mail <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;">&#104;&#101;&#108;&#108;&#111;&#064;&#100;&#097;&#115;&#104;&#105;&#110;&#103;&#046;&#100;&#107;</a> or by phone <span>+45 52 60 82 01</span></p>
+            <p>We also like coffee and we will be more than happy to meet in person when available.</p>
 
           </div>
         </section>

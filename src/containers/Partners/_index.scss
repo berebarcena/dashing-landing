@@ -14,14 +14,14 @@
       position: relative;
       z-index: 100;
 
-      a {
+      .cta a {
         color:#FFC54B;
         font-size: 16px;
         padding: 0.8em 2em;
         border: 1px solid #FFC54B;
         display: inline-block;
       }
-      a:hover {
+      .cta a:hover {
         color: #ffffff;
         border-color: #ffffff;
       }
@@ -193,11 +193,14 @@
 
     }
 
-    &.notify {
-      padding-bottom: 1.5em;
+    &.we-care{
+
+      background-color: #fff8e8;
       .wrapper {
-        h3 {
-          margin-top: 2em;
+        p a, p span {
+          font-weight: bold;
+          color:#333333;
+
         }
       }
     }
@@ -244,10 +247,13 @@
       }
 
 
-      &.notify {
+      &.we-care {
         padding-bottom: 0;
         h2 {
-          font-size: 28px;
+          font-size: 24px;
+        }
+        p a {
+          font-weight: bold;
         }
       }
 
